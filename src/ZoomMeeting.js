@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ZoomMtg } from '@zoomus/websdk';
-ZoomMtg.setZoomJSLib('https://source.zoom.us/1.8.1/lib', '/av');
+ZoomMtg.setZoomJSLib('https://source.zoom.us/1.7.8/lib', '/av');
 
 ZoomMtg.preLoadWasm();
 ZoomMtg.prepareJssdk();
