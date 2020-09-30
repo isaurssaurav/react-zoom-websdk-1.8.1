@@ -60,12 +60,10 @@ const Zoom = () => {
         });
     };
     const joinMeeting = (signature, meetConfig) => {
-        debugger
         ZoomMtg.init({
             leaveUrl: meetConfig.leaveUrl,
             isSupportAV: true,
             success(initRes) {
-                debugger
                 ZoomMtg.join(
                     {
                         meetingNumber: meetConfig.meetingNumber,
@@ -74,11 +72,10 @@ const Zoom = () => {
                         apiKey: meetConfig.apiKey,
                         passWord: meetConfig.passWord,
                         success: function (res) {
+                            $("#zmmtg-root").css("display", "block");
                             console.log('join meeting success');
                         },
                         error: function (err) {
-                            debugger
-
                             console.log('error ==> ', err);
                         }
                     }
