@@ -90,7 +90,7 @@ const Zoom = () => {
         })
     }
 
-    return (<div id="zmmtg-root" className="zoom-wrapper" />)
+    return ""
 }
 
 export default Zoom;
